@@ -1,0 +1,20 @@
+ h3{
+	    background-color:blue;
+		color:#82ADCF;
+		text-align:center;}
+	body {
+	     font-family:arial;
+		 background-color:#27677F; }
+	p { 
+	color:#98F5F9;}
+	
+	ol {
+	     background-color: #82ADCF ;
+		 border: solid 5px;
+		 border-color:blue;
+		 border-top-style:line;
+		 border-left-style:line;
+		 padding-top:2px; }
+	li {
+	     background-color: #82ADCF ;}
+		 

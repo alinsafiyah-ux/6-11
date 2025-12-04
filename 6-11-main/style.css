@@ -8,43 +8,13 @@
 	p { 
 	color:#98F5F9;}
 	
-	ul {
+	ol {
 	     background-color: #82ADCF ;
 		 border: solid 5px;
 		 border-color:blue;
 		 border-top-style:line;
 		 border-left-style:line;
 		 padding-top:2px; }
-	ul {
+	li {
 	     background-color: #82ADCF ;}
 		 
-nav ul {
-	   background-color: navyblue;
-	   border: solid 1px black;
-	   list-style-type:none;
-	   padding:0px;
-	   margin:0px;
-	   overflow:hidden;
-}
-nav a{
-      text-decoration:none;
-      colour:gray;
-      padding:10px;	 
-      display:block;
-      text-align:center;
-}	  
-
-nav a:hover{
-	background-color:red;
-}
-nav li{
-float: left}
-
-.bawah ul{
-background-color:lightblue;}
-
-.bawah li{
-float:right;}
-
-.bawah a:hover{
-background-color:black;}

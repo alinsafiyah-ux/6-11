@@ -1,0 +1,70 @@
+<html>
+<head>
+      <title>Borang Forms</title>
+</head>
+
+<body>
+<h1>WELCOME</h1>
+<p>Fill your information</p>
+
+<form action="index.php" method="POST" style="background-color:skyblue; color:white; border:1px black solid">
+ 
+     <label for="name" style="margin:1.5px; color:blue; background-color:lightgreeen">Name</label>
+     <input type="text" id="name" required placeholder="Nama Penuh"><br>
+	 
+	 <label for="Phone">Phone Number</label>
+     <input type="phone" id="Phone"> <br>
+	 
+	 <label for="pass">Password</label>
+     <input type="password" id="pass" required><br>
+	 
+	 <label for="email">Email</label>
+     <input type="email" id="email"> <br>
+	 
+	 <label for="category">Category :</label>
+	     <label for = "student">Student</label>
+		 <input type="radio" id="student" name="category">
+		 <label for = "lecturer">Lecturer</label>
+		 <input type="radio" id="lecturer"  name="category">
+		 <label for = "visitor">Visitor</label>
+		 <input type="radio" id="Visitor"  name="category">
+		 <br>
+		 
+	 <label for="purpose">Purpose</label>
+	 <select id="purpose">
+	    <option value="a">To complaint</option>
+		<option value="a">To give money</option>
+		<option value="a">To become rich</option>
+	 </select><br>
+	 
+	 <label for="date">Date</label>
+     <input type="date" id="date"><br>
+	 <label for="time">Time</label>
+     <input type="time" id="time"><br>
+	 <label for="datetime">Date and Time</label>
+     <input type="datetime-local" id="datetime"><br>
+	 
+	 <label for="agree">Do you satisfied with the statement?</label>
+     <input type="checkbox" id="agree"><br>
+	 
+	 <label for="proof">Upload the evidence</label><br>
+     <input type="file" id="proof"><br>
+	 
+	 <label for="complaint">Write your suggestions</label><br>
+     <textarea id="complaint"rows="5" cols="30"></textarea>
+	 
+	 label for="color">Favourite Color</label>
+     <input type="color" id="color"><br>
+	 
+	 <label for="rating">Rate our Service</label>
+     <input type="range" id="rating" min="0" max="100">
+	 
+	 <br><br>
+	 <input type= "Submit">
+	 <input type= "Reset">
+
+
+<form>
+
+</body>
+</html>

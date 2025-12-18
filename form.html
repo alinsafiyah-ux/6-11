@@ -7,13 +7,16 @@
 <h1>WELCOME</h1>
 <p>Fill your information</p>
 
-<form action="index.php" method="POST" style="background-color:skyblue; color:white; border:1px black solid">
+<button onclick="mula()"> START</button>
+
+<br>
+<form onsubmit="hantaq();return false" style="background-color:skyblue; color:white; border:1px black solid">
  
-     <label for="name" style="margin:1.5px; color:blue; background-color:lightgreeen">Name</label>
-     <input type="text" id="name" required placeholder="Nama Penuh"><br>
+     <label for="nama" style="margin:1.5px; color:blue; background-color:lightgreeen">Nama</label>
+     <input type="text" id="nama" required placeholder="Nama Penuh"><br>
 	 
-	 <label for="Phone">Phone Number</label>
-     <input type="phone" id="Phone"> <br>
+	 <label for="phone">Phone Number</label>
+     <input type="phone" id="phone"> <br>
 	 
 	 <label for="pass">Password</label>
      <input type="password" id="pass" required><br>
@@ -60,11 +63,30 @@
      <input type="range" id="rating" min="0" max="100">
 	 
 	 <br><br>
-	 <input type= "Submit">
+	 <button type= "Submit">SEND</button>
 	 <input type= "Reset">
 
 
-<form>
+</form>
 
+<hr>
+<h2> Submitted Info </h2>
+<p id="result"></p>
+
+<script>
+alert{"Selamat Datang"};
+function mula(){
+   alert("Boleh start isi borang.");
+   }
+function hantaq(){
+   var nama = document.getElementById("name").value;
+   var phone = document.getElementById("phone").value;
+   var email = document.getElementById("email").value;
+   alert ("Terima Kasih"+ nama +" Kami akan hubungi anda di "+ fon + " atau " + email;
+   document.getElementById("result").innerHTML =
+   "Terima kasih "Terima Kasih"+ nama +" Kami akan hubungi anda di "+ fon + " atau " + email;}
+   
+   
+</script>
 </body>
 </html>

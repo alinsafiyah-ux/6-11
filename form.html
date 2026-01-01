@@ -3,14 +3,19 @@
       <title>Borang Forms</title>
 </head>
 
-<body>
+<body id="first-page">
+
 <h1>WELCOME</h1>
 <p>Fill your information</p>
 
-<button onclick="mula()"> START</button>
+<button onclick="mula()"> START</button><br>
+<button onclick="darkmode()" style=
+"background-color:darkblue; color:Yellow">Dark Mode </button>
+<button onclick="lightmode()" style=
+"background-color:yellow; color:black">Light Mode </button>
 
 <br>
-<form onsubmit="hantaq();return false" style="background-color:skyblue; color:white; border:1px black solid">
+<form onsubmit="hantaq();return false;" style="border:1px black solid">
  
      <label for="nama" style="margin:1.5px; color:blue; background-color:lightgreeen">Nama</label>
      <input type="text" id="nama" required placeholder="Nama Penuh"><br>
@@ -88,12 +93,22 @@ function hantaq(){
 	
    document.getElementById("result").innerHTML ="Terima Kasih"+ nama +" Kami akan hubungi anda di "+ fon + " atau " + email;
 }
-   
+
+function darkmode() {
+document.getElementById("first-page").style.color="red";
+document.getElementById("first-page").style.backgroundColor="darkblue";
+
+}
+
+function lightmode() {
+document.getElementById("first-page").style.color="black";
+document.getElementById("first-page").style.backgroundColor="lightblue";
+
+}
 </script>
 </body>
 
 </html>
-
 
 
 

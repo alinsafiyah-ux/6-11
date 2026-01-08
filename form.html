@@ -1,21 +1,27 @@
 <html>
 <head>
       <title>Borang Forms</title>
+	  <script src="script.ja"></script>
 </head>
 
 <body id="first-page">
 
-<h1>WELCOME</h1>
+<h1 id="welcome">WELCOME</h1>
+<button onclick="welc()" style="font-size:10px">Change this color</button> 
 <p>Fill your information</p>
 
 <button onclick="mula()"> START</button><br>
 <button onclick="darkmode()" style=
 "background-color:darkblue; color:Yellow">Dark Mode </button>
 <button onclick="lightmode()" style=
-"background-color:yellow; color:black">Light Mode </button>
+"background-color:yellow; color:black">Light Mode </button> <br>
+
+<button onclick="LargeText()">LARGE TEXT</button> 
+<button onclick="SmallText()">SMALL TEXT</button>
 
 <br>
-<form onsubmit="hantaq();return false;" style="border:1px black solid">
+<form id="form" onsubmit="hantaq();return false;" style="border:1px black solid">
+<button onclick="borang()">CHANGE FORM COLOR</button> <br>
  
      <label for="nama" style="margin:1.5px; color:blue; background-color:lightgreeen">Nama</label>
      <input type="text" id="nama" required placeholder="Nama Penuh"><br>
@@ -78,36 +84,7 @@
 <h2> Submitted Info </h2>
 <p id="result"></p>
 	
-<script>
-alert("Selamat Datang");
-function mula(){
-   alert("Boleh start isi borang.");
-   }
-function hantaq(){
-   var nama = document.getElementById("name").value;
-   var fon = document.getElementById("phone").value;
-   var email = document.getElementById("email").value;
-	var comp=document.getElementById("complaint").value;
-
-   alert ("Terima Kasih"+ nama +" Kami akan hubungi anda di "+ fon);
-	
-   document.getElementById("result").innerHTML ="Terima Kasih"+ nama +" Kami akan hubungi anda di "+ fon + " atau " + email;
-}
-
-function darkmode() {
-document.getElementById("first-page").style.color="red";
-document.getElementById("first-page").style.backgroundColor="darkblue";
-
-}
-
-function lightmode() {
-document.getElementById("first-page").style.color="black";
-document.getElementById("first-page").style.backgroundColor="lightblue";
-
-}
-</script>
 </body>
-
 </html>
 
 
